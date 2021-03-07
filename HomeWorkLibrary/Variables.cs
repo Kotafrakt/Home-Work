@@ -8,40 +8,39 @@ namespace HomeWorkLibrary
     {
         public static double SolveTheEquation(double a, double b)
         {
+            if (a == b)
+            {
+                throw new Exception("нельзя делить на 0");
+            }
             return ((5 * a + b * b) / (b - a));
         }
-        public static void ChangePlaces(double a, double b)
+        public static string ChangePlaces(double a, double b)
         {
             double c = a;
             a = b;
             b = c;
-            Console.WriteLine($"{a} {b}");
+            return ($"{a} {b}");
         }
-        public static int DivisionAndRemainder(int a, int b)
+        public static double[] DivisionAndRemainder(int a, int b)
         {
+            if (b==0)
+            {
+                throw new Exception("нельзя делить на 0");
+            }
             int x = a / b;
             int d = a % b;
-            return x;
+            return new double[] { x,d };
         }
-        public static double hw4(double a, double b, double c)
+        public static double SolvelinearEquation(double a, double b, double c)
         {
             return (c - b) / a;
         }
-        public static string hw5(double x1, double x2, double y1, double y2)
+        public static string FindingStraight(double x1, double x2, double y1, double y2)
         {
-            //Console.WriteLine("введите x1");
-            //double x1 = Convert.ToDouble(Console.ReadLine());
-            //Console.WriteLine("введите x2");
-            //double x2 = Convert.ToDouble(Console.ReadLine());
-            //Console.WriteLine("введите y1");
-            //double y1 = Convert.ToDouble(Console.ReadLine());
-            //Console.WriteLine("введите y2");
-            //double y2 = Convert.ToDouble(Console.ReadLine());
             double aa = (y2 - y1) / (x2 - x1);
             double bb = (((x1 * (-1) * (y2 - y1)) + (y1 * (x2 - x1))) / (x2 - x1));
             string xx = ($"y={aa}x+{bb}");
             return xx;
         }
-
     }
 }
