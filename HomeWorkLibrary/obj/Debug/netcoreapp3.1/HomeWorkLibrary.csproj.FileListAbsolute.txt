@@ -1,0 +1,13 @@
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.AssemblyInfoInputs.cache
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.AssemblyInfo.cs
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.csproj.CoreCompileInputs.cache
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary.exe
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary.deps.json
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary.runtimeconfig.json
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary.runtimeconfig.dev.json
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary.dll
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary.pdb
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.dll
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.pdb
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.genruntimeconfig.cache
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.csprojAssemblyReference.cache
