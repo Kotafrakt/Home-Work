@@ -31,15 +31,34 @@ namespace HomeWorkLibrary
             int d = a % b;
             return new double[] { x,d };
         }
-        public static double SolvelinearEquation(double a, double b, double c)
+        public static double SolveLinearEquation(double a, double b, double c)
         {
+            if (a == 0)
+            {
+                if (b == c)
+                {
+                    throw new Exception("x может быть любым");
+                }
+                else 
+                {
+                    throw new Exception("Не имеет решения");
+                }
+            }
             return (c - b) / a;
         }
         public static string FindingStraight(double x1, double x2, double y1, double y2)
         {
-            double aa = (y2 - y1) / (x2 - x1);
-            double bb = (((x1 * (-1) * (y2 - y1)) + (y1 * (x2 - x1))) / (x2 - x1));
-            string xx = ($"y={aa}x+{bb}");
+            string xx;
+            if (x1 == x2)
+            {
+                 xx = ("x=0");
+            }
+            else
+            {
+                double aa = (y2 - y1) / (x2 - x1);
+                double bb = (((x1 * (-1) * (y2 - y1)) + (y1 * (x2 - x1))) / (x2 - x1));
+                xx = ($"y={aa}x+{bb}");
+            }
             return xx;
         }
     }

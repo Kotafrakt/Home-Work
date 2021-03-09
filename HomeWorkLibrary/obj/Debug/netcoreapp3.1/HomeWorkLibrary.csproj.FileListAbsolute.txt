@@ -10,7 +10,6 @@ C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcor
 C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.dll
 C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.pdb
 C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.genruntimeconfig.cache
-C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.csprojAssemblyReference.cache
 F:\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.csprojAssemblyReference.cache
 F:\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.AssemblyInfoInputs.cache
 F:\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.AssemblyInfo.cs
@@ -24,3 +23,4 @@ F:\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary
 F:\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary.dll
 F:\repos\HomeWorkLibrary\HomeWorkLibrary\bin\Debug\netcoreapp3.1\HomeWorkLibrary.pdb
 F:\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.genruntimeconfig.cache
+C:\Users\kotafrakt\source\repos\HomeWorkLibrary\HomeWorkLibrary\obj\Debug\netcoreapp3.1\HomeWorkLibrary.csprojAssemblyReference.cache

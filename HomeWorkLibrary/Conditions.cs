@@ -106,7 +106,7 @@ namespace HomeWorkLibrary
             }
             else if (d == 0)
             {
-                x1 = -(b * b) / (2 * a);
+                x1 = -b / (2 * a);
                 return new double[1] { x1 };
             }
             else

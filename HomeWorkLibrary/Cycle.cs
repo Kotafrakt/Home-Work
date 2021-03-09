@@ -128,6 +128,10 @@ namespace HomeWorkLibrary
         }
         public static int SearchForDivisorByEuclideanMethod(int a,int b)
         {
+            if (a == 0 || b==0)
+            {
+                throw new Exception("0 нельзя делить");
+            }
             while (a != b)
             {
                 a = Math.Abs(a);
@@ -145,20 +149,51 @@ namespace HomeWorkLibrary
         }
         public static double SearchBinaryMethod(double a,double d=0.1)
         {
-            double l = 0;
-            double r = a;
-            double m = (l+r)/2 ;
-            while (!((m + d) * (m + d) * (m + d) >= a && (m - d) * (m - d) * (m - d) <= a))
+            double m;
+            if (a == 0)
             {
-                if (m * m * m > a)
+                m = 0;
+            }
+            else
+            {
+                if (a < 0)
                 {
-                    r = m;
+                    a = Math.Abs(a);
+                    double l = 0;
+                    double r = a;
+                    m = (l + r) / 2;
+                    while (!((m + d) * (m + d) * (m + d) >= a && (m - d) * (m - d) * (m - d) <= a))
+                    {
+                        if (m * m * m > a)
+                        {
+                            r = m;
+                        }
+                        else
+                        {
+                            l = m;
+                        }
+                        m = (l + r) / 2;
+                    }
+                    m *= -1;
                 }
                 else
                 {
-                    l = m;
+                    double l = 0;
+                    double r = a;
+                    m = (l + r) / 2;
+                    while (!((m + d) * (m + d) * (m + d) >= a && (m - d) * (m - d) * (m - d) <= a))
+                    {
+                        if (m * m * m > a)
+                        {
+                            r = m;
+                        }
+                        else
+                        {
+                            l = m;
+                        }
+                        m = (l + r) / 2;
+                    }
                 }
-                m = (l + r) / 2;
             }
             return m;
         }

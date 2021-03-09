@@ -102,7 +102,7 @@ namespace HomeWorkLibrary
             }
             return tmpI;
         }
-        public static int FindNumberOfElementsGreaterAllNeighbors(int[,] array)
+        public static int CountNumberOfElementsGreaterAllNeighbors(int[,] array)
         {
             int SumI = 0;
             for (int i = 0; i < array.GetLength(0); i++)
