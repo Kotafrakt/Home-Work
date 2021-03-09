@@ -147,7 +147,7 @@ namespace HomeWorkLibrary
         {
             double l = 0;
             double r = a;
-            double m = r;
+            double m = (l+r)/2 ;
             while (!((m + d) * (m + d) * (m + d) >= a && (m - d) * (m - d) * (m - d) <= a))
             {
                 if (m * m * m > a)
