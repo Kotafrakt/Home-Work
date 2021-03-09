@@ -126,7 +126,7 @@ namespace HomeWorkLibrary
             }
             return d;
         }
-        public static int FindingNthNumberOfTheFibonacciSeries2(int a,int b)
+        public static int SearchForDivisorByEuclideanMethod(int a,int b)
         {
             while (a != b)
             {
