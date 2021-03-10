@@ -6,18 +6,22 @@ namespace HomeWorkLibrary
 {
     public static class Array
     {
-        public static int SearchMin(int a)
+        public static int[] create(int a)
         {
-            if (a<0)
+            if (a < 0)
             {
                 throw new Exception("длинна массива не может быть отрицательной");
             }
             int[] array = new int[a];
             Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
-                array[i] = random.Next(-100, 101);
+                array[i] = random.Next(-100,101);
             }
+            return array;
+        }
+        public static int SearchMin(int[] array)
+        {
             int min = array[0];
             for (int i = 1; i < array.Length; i++)
             {
@@ -28,18 +32,8 @@ namespace HomeWorkLibrary
             }
             return min;
         }
-        public static int SearchMax(int a)
+        public static int SearchMax(int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(-100, 101);
-            }
             int max = array[0];
             for (int i = 1; i < array.Length; i++)
             {
@@ -50,18 +44,8 @@ namespace HomeWorkLibrary
             }
             return max;
         }
-        public static int SearchMinIndex(int a)
+        public static int SearchMinIndex(int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(-100, 101);
-            }
             int min = array[0];
             int minIndex = 0;
             for (int i = 1; i < array.Length; i++)
@@ -74,18 +58,8 @@ namespace HomeWorkLibrary
             }
             return minIndex;
         }
-        public static int SearchMaxIndex(int a)
+        public static int SearchMaxIndex(int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(-100, 101);
-            }
             int max = array[0];
             int maxIndex = 0;
             for (int i = 1; i < array.Length; i++)
@@ -98,18 +72,8 @@ namespace HomeWorkLibrary
             }
             return maxIndex;
         }
-        public static int SearchSumOddindex (int a)
+        public static int SearchSumOddindex (int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(-100, 101);
-            }
             int sum = 0;
             for (int i = 0; i < array.Length; i++)
             {
@@ -120,40 +84,20 @@ namespace HomeWorkLibrary
             }
             return sum;
         }
-        public static int[] Reverse(int a)
+        public static int[] Reverse(int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(-100, 101);
-            }
-            int b = 0;
+            int b;
             for (int i = 0; i < (array.Length / 2); i++)
             {
                 b = array[i];
-                int x = a - i - 1;
+                int x = 5 - i - 1;
                 array[i] = array[x];
                 array[x] = b;
             }
             return array;
         }
-        public static int SearhOddNumbers(int a)
+        public static int SearhOddNumbers(int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(-100, 101);
-            }
             int sum = 0;
             for (int i = 0; i < array.Length; i++)
             {
@@ -164,48 +108,26 @@ namespace HomeWorkLibrary
             }
             return sum;
         }
-        public static int[] ReverseOfHalfArray(int a)
+        public static int[] ReverseOfHalfArray(int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(-100, 101);
-                Console.Write(array[i] + " ");
-            }
             int y;
             int b = array.Length / 2;
             int x;
             for (int i = 0; i < b; i++)
             {
                 y = array[i];
-                x = (a - 1) / 2 + 1 + i;
+                x = (array.Length - 1) / 2 + 1 + i;
                 array[i] = array[x];
                 array[x] = y;
             }
             return array;
         }
-        public static int[] SortingOfIncrease(int a)
+        public static int[] SortingOfIncrease(int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < a; i++)
-            {
-                array[i] = random.Next(-100, 101);
-                Console.Write(array[i] + " ");
-            }
             int y;
-            for (int i = 0; i < a; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                for (int j = i + 1; j < a; j++)
+                for (int j = i + 1; j < array.Length; j++)
                 {
                     if (array[i] > array[j])
                     {
@@ -217,20 +139,10 @@ namespace HomeWorkLibrary
             }
             return array;
         }
-        public static int[] SortingOfDecrease(int a)
+        public static int[] SortingOfDecrease(int[] array)
         {
-            if (a < 0)
-            {
-                throw new Exception("длинна массива не может быть отрицательной");
-            }
-            int[] array = new int[a];
-            Random random = new Random();
-            for (int i = 0; i < a; i++)
-            {
-                array[i] = random.Next(-100, 101);
-            }
             int y;
-            for (int i = 0; i < a - 1; i++)
+            for (int i = 0; i < array.Length - 1; i++)
             {
                 for (int j = i + 1; j > 0; j--)
 

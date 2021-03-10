@@ -76,5 +76,42 @@ namespace HomeWorkLibrary.Tests
             double actual = Cycle.SearchBinaryMethod(a);
             Assert.AreEqual(expected, actual,0.1);
         }
+
+        [TestCase(2, 0)]
+        [TestCase(99, 2)]
+        [TestCase(-12345, 3)]
+        public void SearchForOddNumberTests(int a, int expected)
+        {
+            double actual = Cycle.SearchForOddNumber(a);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(0, 0)]
+        [TestCase(95687, 78659)]
+        [TestCase(-12345, -54321)]
+        public void SearchNumberTests(int a, int expected)
+        {
+            double actual = Cycle.SearchNumber(a);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(0, "")]
+        [TestCase(10, "2 4 6 8 ")]
+        [TestCase(20, "2 4 6 8 12 14 16 18 20 ")]
+        public void SearchForSumsOfEvenNumbersTests(int a, string expected)
+        {
+            string actual = Cycle.SearchForSumsOfEvenNumbers(a);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(12, 21, true)]
+        [TestCase(12345, 6789, false)]
+        [TestCase(-36578, 12345, true)]
+        public void SearchForIdenticalNumbersTests(int a, int b, bool expected)
+        {
+            bool actual = Cycle.SearchForIdenticalNumbers(a,b);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
+

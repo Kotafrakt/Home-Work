@@ -272,6 +272,14 @@ namespace HomeWorkLibrary
         }
         public static bool SearchForIdenticalNumbers(int a, int b)
         {
+            if (a<0)
+            {
+                a = Math.Abs(a);
+            }
+            if (b < 0)
+            {
+                b = Math.Abs(b);
+            }
             int c;
             int d;
             int e = 0;
