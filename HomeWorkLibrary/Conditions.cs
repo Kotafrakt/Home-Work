@@ -27,7 +27,7 @@ namespace HomeWorkLibrary
         {
             if (x == 0 || y == 0)
             {
-                throw new Exception("точка лежит на оси");
+                throw new ArgumentException("точка лежит на оси");
             }
             string s;
             if (x > 0)
@@ -93,7 +93,7 @@ namespace HomeWorkLibrary
         {
             if(a==0)
             {
-                throw new Exception("a=0");
+                throw new ArgumentException("a=0");
             }
             double d = b * b - 4 * a * c;
             double x1;
@@ -119,7 +119,7 @@ namespace HomeWorkLibrary
         {
             if (a>99||a<10)
             {
-                throw new Exception("a двухзначное");
+                throw new ArgumentException("a двухзначное");
             }
             string s = "";
             string ss = "" ;

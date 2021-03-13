@@ -10,7 +10,7 @@ namespace HomeWorkLibrary
         {
             if (a == b)
             {
-                throw new Exception("нельзя делить на 0");
+                throw new ArgumentException("нельзя делить на 0");
             }
             return ((5 * a + b * b) / (b - a));
         }
@@ -25,7 +25,7 @@ namespace HomeWorkLibrary
         {
             if (b==0)
             {
-                throw new Exception("нельзя делить на 0");
+                throw new ArgumentException("нельзя делить на 0");
             }
             int x = a / b;
             int d = a % b;
@@ -37,7 +37,7 @@ namespace HomeWorkLibrary
             {
                 if (b == c)
                 {
-                    throw new Exception("x может быть любым");
+                    throw new ArgumentNullException("x может быть любым");
                 }
                 else 
                 {

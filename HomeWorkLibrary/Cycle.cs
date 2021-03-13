@@ -35,7 +35,7 @@ namespace HomeWorkLibrary
         {
             if (a<0)
             {
-                throw new Exception("a<0");
+                throw new ArgumentException("a<0");
             }
             int x = 0;
             for (int i = 1; i <= 1000; i++)
@@ -113,7 +113,7 @@ namespace HomeWorkLibrary
         {
             if (a<0)
             {
-                throw new Exception("a<0");
+                throw new ArgumentException("a<0");
             }
             int b = 0;
             int c = 1;
@@ -130,7 +130,7 @@ namespace HomeWorkLibrary
         {
             if (a == 0 || b==0)
             {
-                throw new Exception("0 нельзя делить");
+                throw new ArgumentException("0 нельзя делить");
             }
             while (a != b)
             {
@@ -236,7 +236,7 @@ namespace HomeWorkLibrary
         {
             if (a<0)
             {
-                throw new Exception("a<0");
+                throw new ArgumentException("a<0");
             }
             int i = 1;
             int b = 0;

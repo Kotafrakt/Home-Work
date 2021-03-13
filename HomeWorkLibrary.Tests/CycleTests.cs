@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace HomeWorkLibrary.Tests
 {
@@ -111,6 +112,32 @@ namespace HomeWorkLibrary.Tests
         {
             bool actual = Cycle.SearchForIdenticalNumbers(a,b);
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(-1)]
+        public void FindingTheDivisorException(int a)
+        {
+            Assert.Throws<ArgumentException>(() => Cycle.FindingTheDivisor(a));
+        }
+
+        [TestCase(-5)]
+        public void FindingNthNumberOfTheFibonacciSeriesException(int a)
+        {
+            Assert.Throws<ArgumentException>(() => Cycle.FindingNthNumberOfTheFibonacciSeries(a));
+        }
+
+        [TestCase(1, 0)]
+        [TestCase(0, 1)]
+        [TestCase(0, 0)]
+        public void SearchForDivisorByEuclideanMethodException(int a,int b)
+        {
+            Assert.Throws<ArgumentException>(() => Cycle.SearchForDivisorByEuclideanMethod(a,b));
+        }
+
+        [TestCase(-1)]
+        public void SearchForSumsOfEvenNumbersException(int a)
+        {
+            Assert.Throws<ArgumentException>(() => Cycle.SearchForSumsOfEvenNumbers(a));
         }
     }
 }

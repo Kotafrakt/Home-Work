@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace HomeWorkLibrary.Tests
 {
@@ -47,6 +48,27 @@ namespace HomeWorkLibrary.Tests
         {
             string actual = conditions.TranslateIntoLettersint(a);
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(0, 0)]
+        [TestCase(1, 0)]
+        [TestCase(0, 1)]
+        public void FindingAQuarterException(int a,int b)
+        {
+            Assert.Throws<ArgumentException>(() => conditions.FindingAQuarter(a,b));
+        }
+
+        [TestCase(0, 0, 0)]
+        public void SolutionOfAquadraticEquationException(double a, double b, double c)
+        {
+            Assert.Throws<ArgumentException>(() => conditions.SolutionOfAquadraticEquation(a,b,c));
+        }
+
+        [TestCase(1)]
+        [TestCase(151)]
+        public void TranslateIntoLettersintException(int a)
+        {
+            Assert.Throws<ArgumentException>(() => conditions.TranslateIntoLettersint(a));
         }
     }
 }

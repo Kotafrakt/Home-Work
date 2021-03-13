@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 
 namespace HomeWorkLibrary.Tests
 {
@@ -46,6 +47,32 @@ namespace HomeWorkLibrary.Tests
         {
             string actual = Variables.FindingStraight(a, b, c, d);
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(1,1)]
+        [TestCase(5, 5)]
+        [TestCase(3, 3)]
+        public void SolveTheEquationException(double a, double b)
+        {
+            Assert.Throws<ArgumentException>(() => Variables.SolveTheEquation(a,b));
+        }
+
+        [TestCase(1, 0)]
+        public void DivisionAndRemainderException(int a, int b)
+        {
+            Assert.Throws<ArgumentException>(() => Variables.DivisionAndRemainder(a, b));
+        }
+
+        [TestCase(0, 5, 10)]
+        public void SolveLinearEquationException(double a, double b, double c)
+        {
+            Assert.Throws<Exception>(() => Variables.SolveLinearEquation(a, b, c));
+        }
+
+        [TestCase(0, 5, 5)]
+        public void SolveLinearEquationException_0(double a, double b, double c)
+        {
+            Assert.Throws<ArgumentNullException>(() => Variables.SolveLinearEquation(a, b, c));
         }
     }
 }

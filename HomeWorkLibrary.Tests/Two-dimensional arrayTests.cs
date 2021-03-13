@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace HomeWorkLibrary.Tests
 {
@@ -62,6 +63,9 @@ namespace HomeWorkLibrary.Tests
                         {-3,-13,-8},
                         {-4,-14,-9}
                     };
+                    break;
+                case 7:
+                    array = new int[,]{};
                     break;
             }
             return array;
@@ -138,6 +142,34 @@ namespace HomeWorkLibrary.Tests
 
             int[,] actual = Two_dimensional_array.transpose(array);
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(7)]
+        public void SearchMinException(int a)
+        {
+            int[,] array = Two_dimensional_arrayTests.GetMock(a);
+            Assert.Throws<IndexOutOfRangeException>(() => Two_dimensional_array.SearchMin(array));
+        }
+
+        [TestCase(7)]
+        public void SearchMaxException(int a)
+        {
+            int[,] array = Two_dimensional_arrayTests.GetMock(a);
+            Assert.Throws<IndexOutOfRangeException>(() => Two_dimensional_array.SearchMax(array));
+        }
+
+        [TestCase(7)]
+        public void SearchIndexOfMinException(int a)
+        {
+            int[,] array = Two_dimensional_arrayTests.GetMock(a);
+            Assert.Throws<IndexOutOfRangeException>(() => Two_dimensional_array.SearchIndexOfMin(array));
+        }
+
+        [TestCase(7)]
+        public void SearchIndexOfMaxException(int a)
+        {
+            int[,] array = Two_dimensional_arrayTests.GetMock(a);
+            Assert.Throws<IndexOutOfRangeException>(() => Two_dimensional_array.SearchIndexOfMax(array));
         }
     }
 }
