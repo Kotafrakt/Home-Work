@@ -8,7 +8,7 @@ namespace HomeWorkLibrary
     {
         public static int[,] create(int a, int b)
         {
-            if (a < 0||b<0)
+            if (a <= 0||b<=0)
             {
                 throw new Exception("длинна массива не может быть отрицательной");
             }
@@ -36,7 +36,7 @@ namespace HomeWorkLibrary
         }
         public static int SearchMin(int[,] array)
         {
-            if (array.Length < 0)
+            if (array.Length <= 0)
             {
                 throw new ArgumentException("пустой массив");
             }
@@ -55,7 +55,7 @@ namespace HomeWorkLibrary
         }
         public static int SearchMax(int[,] array)
         {
-            if (array.Length < 0)
+            if (array.Length <= 0)
             {
                 throw new ArgumentException("пустой массив");
             }
@@ -74,7 +74,7 @@ namespace HomeWorkLibrary
         }
         public static string SearchIndexOfMin(int[,] array)
         {
-            if (array.Length < 0)
+            if (array.Length <= 0)
             {
                 throw new ArgumentException("пустой массив");
             }
@@ -97,7 +97,7 @@ namespace HomeWorkLibrary
         }
         public static string SearchIndexOfMax(int[,] array)
         {
-            if (array.Length < 0)
+            if (array.Length <= 0)
             {
                 throw new ArgumentException("пустой массив");
             }

@@ -148,28 +148,28 @@ namespace HomeWorkLibrary.Tests
         public void SearchMinException(int a)
         {
             int[,] array = Two_dimensional_arrayTests.GetMock(a);
-            Assert.Throws<IndexOutOfRangeException>(() => Two_dimensional_array.SearchMin(array));
+            Assert.Throws<ArgumentException>(() => Two_dimensional_array.SearchMin(array));
         }
 
         [TestCase(7)]
         public void SearchMaxException(int a)
         {
             int[,] array = Two_dimensional_arrayTests.GetMock(a);
-            Assert.Throws<IndexOutOfRangeException>(() => Two_dimensional_array.SearchMax(array));
+            Assert.Throws<ArgumentException>(() => Two_dimensional_array.SearchMax(array));
         }
 
         [TestCase(7)]
         public void SearchIndexOfMinException(int a)
         {
             int[,] array = Two_dimensional_arrayTests.GetMock(a);
-            Assert.Throws<IndexOutOfRangeException>(() => Two_dimensional_array.SearchIndexOfMin(array));
+            Assert.Throws<ArgumentException>(() => Two_dimensional_array.SearchIndexOfMin(array));
         }
 
         [TestCase(7)]
         public void SearchIndexOfMaxException(int a)
         {
             int[,] array = Two_dimensional_arrayTests.GetMock(a);
-            Assert.Throws<IndexOutOfRangeException>(() => Two_dimensional_array.SearchIndexOfMax(array));
+            Assert.Throws<ArgumentException>(() => Two_dimensional_array.SearchIndexOfMax(array));
         }
     }
 }

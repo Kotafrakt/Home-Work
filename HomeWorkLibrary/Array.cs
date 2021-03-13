@@ -22,9 +22,9 @@ namespace HomeWorkLibrary
         }
         public static int SearchMin(int[] array)
         {
-            if (array.Length<0)
+            if (array.Length<=0)
             {
-                throw new IndexOutOfRangeException("пустой массив");
+                throw new ArgumentException("пустой массив");
             }
             int min = array[0];
             for (int i = 1; i < array.Length; i++)
@@ -38,9 +38,9 @@ namespace HomeWorkLibrary
         }
         public static int SearchMax(int[] array)
         {
-            if (array.Length < 0)
+            if (array.Length <= 0)
             {
-                throw new IndexOutOfRangeException("пустой массив");
+                throw new ArgumentException("пустой массив");
             }
             int max = array[0];
             for (int i = 1; i < array.Length; i++)
@@ -54,9 +54,9 @@ namespace HomeWorkLibrary
         }
         public static int SearchMinIndex(int[] array)
         {
-            if (array.Length < 0)
+            if (array.Length <= 0)
             {
-                throw new IndexOutOfRangeException("пустой массив");
+                throw new ArgumentException("пустой массив");
             }
             int min = array[0];
             int minIndex = 0;
@@ -72,9 +72,9 @@ namespace HomeWorkLibrary
         }
         public static int SearchMaxIndex(int[] array)
         {
-            if (array.Length < 0)
+            if (array.Length <= 0)
             {
-                throw new IndexOutOfRangeException("пустой массив");
+                throw new ArgumentException("пустой массив");
             }
             int max = array[0];
             int maxIndex = 0;

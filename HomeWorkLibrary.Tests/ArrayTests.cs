@@ -109,25 +109,25 @@ namespace HomeWorkLibrary.Tests
         [TestCase(new int[] {})]
         public void SearchMinException(int[] a)
         {
-            Assert.Throws<IndexOutOfRangeException>(()=>Array.SearchMin(a));
+            Assert.Throws<ArgumentException>(()=>Array.SearchMin(a));
         }
 
         [TestCase(new int[] { })]
         public void SearchMaxException(int[] a)
         {
-            Assert.Throws<IndexOutOfRangeException>(() => Array.SearchMax(a));
+            Assert.Throws<ArgumentException>(() => Array.SearchMax(a));
         }
 
         [TestCase(new int[] { })]
         public void SearchMinIndexException(int[] a)
         {
-            Assert.Throws<IndexOutOfRangeException>(() => Array.SearchMinIndex(a));
+            Assert.Throws<ArgumentException>(() => Array.SearchMinIndex(a));
         }
 
         [TestCase(new int[] { })]
         public void SearchMaxIndexException(int[] a)
         {
-            Assert.Throws<IndexOutOfRangeException>(() => Array.SearchMaxIndex(a));
+            Assert.Throws<ArgumentException>(() => Array.SearchMaxIndex(a));
         }
     }
 }
