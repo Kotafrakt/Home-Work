@@ -20,6 +20,14 @@ namespace HomeWorkLibrary
             }
             return array;
         }
+        public static void Print(int[] array)
+        {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                Console.Write($"{array[i]} ");
+            }
+            Console.WriteLine();
+        }
         public static int SearchMin(int[] array)
         {
             if (array.Length<=0)
@@ -106,7 +114,7 @@ namespace HomeWorkLibrary
             for (int i = 0; i < (array.Length / 2); i++)
             {
                 b = array[i];
-                int x = 5 - i - 1;
+                int x = array.Length - i - 1;
                 array[i] = array[x];
                 array[x] = b;
             }
